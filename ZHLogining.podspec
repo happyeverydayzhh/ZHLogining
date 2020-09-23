@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZHLogining/Classes/**/*'
+  s.dependency 'ZHTest'
   
   # s.resource_bundles = {
   #   'ZHLogining' => ['ZHLogining/Assets/*.png']

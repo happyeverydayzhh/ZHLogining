@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02366FDA5FC7B445D109348F /* ZHLogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZHLogining.podspec; path = ../ZHLogining.podspec; sourceTree = "<group>"; };
+		02366FDA5FC7B445D109348F /* ZHLogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZHLogining.podspec; path = ../ZHLogining.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		483928D71C13416ACFDA7B23 /* Pods-ZHLogining_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLogining_Example.release.xcconfig"; path = "Target Support Files/Pods-ZHLogining_Example/Pods-ZHLogining_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZHLogining_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHLogining_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,11 +62,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8785993E5E705EAAF5274ECE /* Pods-ZHLogining_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLogining_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZHLogining_Example/Pods-ZHLogining_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A85CAB5505DDB94A8703C5A6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A85CAB5505DDB94A8703C5A6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B18B569A2876BDEFA6961A5F /* Pods_ZHLogining_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHLogining_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A86973199FF1555B1A6A10 /* Pods_ZHLogining_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZHLogining_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10243994A2BC59501E0BF54 /* Pods-ZHLogining_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZHLogining_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZHLogining_Tests/Pods-ZHLogining_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F27FC7CF8004E6CE9A848332 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F27FC7CF8004E6CE9A848332 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				6C1B9E15251055AF966BFC5B /* Pods-ZHLogining_Tests.debug.xcconfig */,
 				D10243994A2BC59501E0BF54 /* Pods-ZHLogining_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -304,10 +304,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZHLogining_Example/Pods-ZHLogining_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ZHLogining/ZHLogining.framework",
+				"${BUILT_PRODUCTS_DIR}/ZHTest/ZHTest.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHLogining.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHTest.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

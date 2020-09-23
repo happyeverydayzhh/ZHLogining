@@ -1,0 +1,6 @@
+framework module ZHLogining {
+  umbrella header "ZHLogining-umbrella.h"
+
+  export *
+  module * { export * }
+}
